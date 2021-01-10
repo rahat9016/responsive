@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .photo-wrap{
+            width: 400px;
+            height: 365px;
+            border: 10px solid orange;
+            position: relative;
+        }
+        .img-box img{
+            width: 100%;
+            height: 50%;
+        }
+        .photo-detail{
+            width: 400px;
+            height: 365px;
+            position: absolute;
+            top:0;
+            opacity: 0;
+        }
+        .photo-wrap:hover .photo-detail{
+            background-color: rgba(17, 128, 143,0.8);
+            opacity: 1;
+            transition: 1s;
+        }
+        .photo-wrap:hover  h1{
+            text-align:center;
+            color:#fff;
+            font-size:50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="photo-album">
+        <div class="photo-wrap">
+            <div class="img-box">
+                <img src="img/img2.png" alt="">
+            </div>
+            <div class="photo-detail">
+                <h1>This is Banner</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque temporibus eum in dignissimos facere hic nulla porro facilis. Voluptatum!</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
